@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - TechGear Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white shadow-lg fixed w-full z-10">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold">TechGear Shop</div>
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html" class="hover:text-blue-200">Home</a>
+                    <a href="products.html" class="hover:text-blue-200">Products</a>
+                    <a href="cart.html" class="hover:text-blue-200">Video</a>
+                    <a href="login.html" class="hover:text-blue-200">Login</a>
+                    <a href="signup.html" class="hover:text-blue-200">Sign Up</a>
+                    <a href="/Privacy Policy.pdf" class="hover:text-blue-200" download>Download PDF</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-white focus:outline-none">
+                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-8 pt-24">
+        <h1 class="text-3xl font-semibold mb-6">Our Products</h1>
+        
+        <div class="flex flex-wrap -mx-4">
+            <!-- Sidebar -->
+            <div class="w-full md:w-1/4 px-4 mb-8">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-xl font-semibold mb-4">Categories</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-blue-600 hover:underline">Smartphones</a></li>
+                        <li><a href="#" class="text-blue-600 hover:underline">Laptops</a></li>
+                        <li><a href="#" class="text-blue-600 hover:underline">Wearables</a></li>
+                        <li><a href="#" class="text-blue-600 hover:underline">Accessories</a></li>
+                        <li><a href="#" class="text-blue-600 hover:underline">Audio</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="w-full md:w-3/4 px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <img src="https://ikall.in/wp-content/uploads/2023/06/51sJmHfw92L._SL1000_.jpg" alt="Latest Smartphone" class="w-full h-48 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-semibold mb-2">Latest Smartphone</h3>
+                        <p class="text-gray-600 mb-4">Experience cutting-edge technology with our latest smartphone model. Features a powerful processor, stunning camera, and all-day battery life.</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-blue-600 font-bold">$699.99</p>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_UF1000,1000_QL80_.jpg" alt="Ultra-thin Laptop" class="w-full h-48 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-semibold mb-2">Ultra-thin Laptop</h3>
+                        <p class="text-gray-600 mb-4">Powerful performance in a sleek, lightweight design. Perfect for work and play. Features a high-resolution display and long-lasting battery.</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-blue-600 font-bold">$1299.99</p>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <img src="https://rukminim2.flixcart.com/image/850/1000/l1l1rww0/watch/5/w/u/1-black-dial-digital-watch-for-boys-black-sports-watch-men-original-imagd4yzszbgba39.jpeg?q=20&crop=false" alt="Fitness Smartwatch" class="w-full h-48 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-semibold mb-2">Fitness Smartwatch</h3>
+                        <p class="text-gray-600 mb-4">Track your fitness goals and stay connected with this feature-packed smartwatch. Includes heart rate monitoring, GPS, and water resistance.</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-blue-600 font-bold">$199.99</p>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_UF1000,1000_QL80_.jpg" alt="Wireless Earbuds" class="w-full h-48 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-semibold mb-2">Wireless Earbuds</h3>
+                        <p class="text-gray-600 mb-4">Immerse yourself in crystal-clear sound with our noise-cancelling wireless earbuds. Comfortable fit and long battery life for all-day listening.</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-blue-600 font-bold">$149.99</p>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <img src="https://m.media-amazon.com/images/I/61ZQmvzVJuL._AC_UF1000,1000_QL80_.jpg" alt="4K Action Camera" class="w-full h-48 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-semibold mb-2">4K Action Camera</h3>
+                        <p class="text-gray-600 mb-4">Capture your adventures in stunning 4K resolution with our waterproof action camera. Includes image stabilization and various shooting modes.</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-blue-600 font-bold">$249.99</p>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxNkwlOJBRXTwcLk1efIFaDk71le5uz06jcg&s" alt="Smart Home Hub" class="w-full h-48 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-semibold mb-2">Smart Home Hub</h3>
+                        <p class="text-gray-600 mb-4">Control your entire home with our easy-to-use smart home hub. Compatible with various IoT devices for a fully connected living experience.</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-blue-600 font-bold">$179.99</p>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-between">
+                <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                    <h3 class="text-xl font-semibold mb-2">TechGear Shop</h3>
+                    <p class="text-gray-400">Your one-stop shop for all things tech.</p>
+                </div>
+                <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                    <h3 class="text-xl font-semibold mb-2">Quick Links</h3>
+                    <ul class="text-gray-400">
+                        <li><a href="#" class="hover:text-white">Home</a></li>
+                        <li><a href="#" class="hover:text-white">Products</a></li>
+                        <li><a href="#" class="hover:text-white">About</a></li>
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                    <h3 class="text-xl font-semibold mb-2">Contact Us</h3>
+                    <p class="text-gray-400">123 Tech Street, Digital City, 12345</p>
+                    <p class="text-gray-400">Email: info@techgearshop.com</p>
+                    <p class="text-gray-400">Phone: (123) 456-7890</p>
+                </div>
+                <div class="w-full md:w-1/4">
+                    <h3 class="text-xl font-semibold mb-2">Newsletter</h3>
+                    <p class="text-gray-400 mb-2">Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-sm text-gray-400 text-center">
+                <p>&copy; 2024 TechGear Shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Cart state
+        let cart = [];
+
+        // Update cart display
+        function updateCartCount() {
+            const cartCount = document.getElementById('cart-count');
+            cartCount.textContent = `(${cart.length})`;
+        }
+
+        // Add to cart functionality
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                const name = button.getAttribute('data-name');
+                const price = parseFloat(button.getAttribute('data-price'));
+                
+                // Check if item already exists in the cart
+                let item = cart.find(item => item.name === name);
+                if (item) {
+                    item.quantity++;
+                } else {
+                    cart.push({ name, price, quantity: 1 });
+                }
+
+                alert(`${name} added to cart!`);
+                updateCartCount();
+            });
+        });
+
+        // Initialize cart count
+        updateCartCount();
+    </script>
+</body>
+</html>
