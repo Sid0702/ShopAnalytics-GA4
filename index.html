@@ -230,13 +230,13 @@
     </footer>
 
     <script>
-        function selectItem(item) {
-            gtag('event', 'select_item', {
-                'item_name': item.name,
-                'item_category': item.category,
-                'item_id': item.id
+        function trackViewItem(productName, price) {
+            gtag('event', 'view_item', {
+                "items": [{
+                    "item_name": productName,
+                    "price": price
+                }]
             });
-            console.log('Item selected:', item.name);
         }
     </script>
     <script>
